@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate Website</title>
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+
+<body class="loginbody" id="loginbody">
+    <header>
+        <div class="navdiv">
+            <nav class="navbar">
+                <ul>
+                  <li><a href="../../FrontEnd/index.html"> Home</a></li>
+                  <li><a href="../../FrontEnd/search.html"> Search</a></li>
+                  <li class="logo">Global RealEstate</li>
+                  <li><a href="../../FrontEnd/about.html"> About</a></li>
+                  <li><a href="localhost:3002"> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="loginbackground">
+        <div class="loginbackground2"><h1>Login</h1></div>
+        <div class="loginbackground3">
+            <form>
+                <div class="loginFormDiv1">
+                  
+                  <input class="loginInput" type="email" id="username" placeholder="Enter Email" name="email" required>
+                </div>
+                <div class="email error"></div>
+                
+                <div class="loginFormDiv2">
+
+                  <input class="loginInput" type="password" id="password" placeholder="Enter Password" name="password" required>
+                  
+                  <img src="/icons/eye-close.png" alt="" id="eyeIcon">
+                </div>
+                <div class="password error"></div>
+                <button >Login</button>
+              </form>
+
+        </div>
+        <p> <a href="/signup">Didn't have account signup</a>
+            
+        </p>
+        <a href="#">forget Password</a>
+
+    </div>
+
+<script>
+     var bgpattern = document.getElementById("loginbody")
+    window.addEventListener("scroll",function(){
+        bgpattern.style.backgroundPositionY=+window.pageYOffset+"px";
+    })
+
+    let eyeIcon = document.getElementById('eyeIcon');
+    let passwordInput = document.getElementById('password');
+
+    eyeIcon.addEventListener('click', function() {
+     if (passwordInput.type == 'password') {
+         passwordInput.type = 'text';
+         eyeIcon.src = '/icons/eye-open.png';  
+   } else {
+    passwordInput.type = 'password';
+    eyeIcon.src = '/icons/eye-close.png'; 
+   }
+   });
+    
+
+    
+
+
+</script>
+<script>
+    const form = document.querySelector('form');
+    const emailError = document.querySelector('.email.error');
+    const passwordError = document.querySelector('.password.error');
+  
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      // reset errors
+      emailError.textContent = '';
+      passwordError.textContent = '';
+  
+      // get values
+      const email = form.email.value;
+      const password = form.password.value;
+  
+      try {
+        const res = await fetch('/login', { 
+          method: 'POST', 
+          body: JSON.stringify({ email, password }),
+          headers: {'Content-Type': 'application/json'}
+        });
+        const data = await res.json();
+        console.log(data);
+        if (data.errors) {
+          emailError.textContent = data.errors.email;
+          passwordError.textContent = data.errors.password;
+        }
+        if (data.user) {
+          location.assign('/');
+        }
+  
+      }
+      catch (err) {
+        console.log(err);
+      }
+    });
+  </script>
+
+</body>

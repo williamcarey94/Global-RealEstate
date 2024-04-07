@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body class="profileBody" id="profileBody">
+    <header>
+        <div class="navdiv">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../../FrontEnd/index.html"> Home</a></li>
+                    <li><a href="../../FrontEnd/search.html"> Search</a></li>
+                    <li class="logo">Global RealEstate</li>
+                    <li><a href="../../FrontEnd/about.html"> About</a></li>
+                    <li><a href="localhost:3002"> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="profileNavdiv">
+       <div class="profileHeadding"><h2>Profile </h2></div> 
+        <div class="profileButtons">
+            
+        <% if (user) { %>
+            <div class="profileName"><h3>Welcome <%= user.email %></h3></div>
+            <button onclick="document.location='/logout'">logout</button>
+        <% } else { %>
+            <div class="profileName"><h3>Welcome User!</h3></div>
+            <button onclick="document.location='/login'">login</button>
+            <button onclick="document.location='/signup'">signup</button>
+        <% } %>
+            
+            </div>
+    </div>
+
+    <script>
+        var bgpatternProfile = document.getElementById("profileBody")
+       window.addEventListener("scroll",function(){
+           bgpatternProfile.style.backgroundPositionY=+window.pageYOffset+"px";
+       })
+   
+   </script>
+
+   <div class="profileDetails"></div>
+   <div class="profileYourFavorite"></div>
+   <div class="profileYourPurchase"></div>
+    
+</body>
+

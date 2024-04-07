@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate Website</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="navdiv">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="product.html"> Search</a></li>
+                    <li class="logo">Global RealEstate</li>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="http://localhost:3002"> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="homepageIMG">
+        <div class="homepageIMGtext">
+            <h1> embrase your own property</h1>
+            <p>  Don't just own it, make it your own,
+                Embrace your space, let happiness be sown.</p>
+        </div>
+        <div class="homepageIMGbuttons">
+
+                <button onclick="document.location='PropertyValue.html'">Estimate your Property Value</button>
+                <button onclick="document.location='recomendedproperty.html'">recomended property for you</button>
+            
+        </div>
+   
+    </div>
+    <div id="div1" class="div1">
+        <div>
+            <h3>
+                <a href="#RealEstateoptions">Get started with exploring the RealEstate options!</a>
+            </h3>
+        </div>
+     
+    </div>
+   
+    <div class="RealEstateoptions" id="RealEstateoptions">
+        <div class="RealEstateoptionsbackground" id="RealEstateoptionsbackground">
+        
+        <div class="optionsdiv1">
+            <a class="option1a" href="#">
+            <div class="option1">
+                <div class="slider1">
+                <img src="images/Patterns/pattern4.jpeg" alt="">
+                <img src="images/Patterns/pattern3.jpeg" alt="">
+                <img src="images/Patterns/pattern2.jpeg" alt="">
+                <img src="images/Patterns/pattern1.jpeg" alt="">
+                </div>
+            </div>
+            </a>
+        <a class="option1a" href="#">
+            <div class="option2">
+                <div class="slider2">
+                <img class="imgleft" src="images/Patterns/pattern1.jpeg" alt="">
+                <img class="imgleft" src="images/Patterns/pattern3.jpeg" alt="">
+                <img class="imgleft" src="images/Patterns/pattern4.jpeg" alt="">
+                <img class="imgleft" src="images/Patterns/pattern2.jpeg" alt="">
+                </div> 
+            </div>
+            </a>
+        </div>
+            <div class="optionsdiv2">
+            <a class="option1a" href="#">
+            <div class="option3">
+                <div class="slider2">
+                <img class="imgleft" src="images/Patterns/pattern1.jpeg" alt="">
+                <img class="imgleft" src="images/Patterns/pattern2.jpeg" alt="">
+                <img class="imgleft" src="images/Patterns/pattern4.jpeg" alt="">
+                <img class="imgleft" src="images/Patterns/pattern3.jpeg" alt="">
+                </div>
+                </div>
+            </a>
+            <a class="option1a" href="#">
+            <div class="option4" href="">
+                <div class="slider1">
+                <img src="images/Patterns/pattern1.jpeg" alt="">
+                <img src="images/Patterns/pattern2.jpeg" alt="">
+                <img src="images/Patterns/pattern3.jpeg" alt="">
+                <img src="images/Patterns/pattern4.jpeg" alt="">
+                </div>
+            </div>
+            </a>
+        
+    </div>
+            <h2>RealEstate Options:</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Quibusdam est animi optio asperiores ex dolorem,
+             provident quos molestias nisi ut nam illo expedita perspiciatis eligendi,
+             deserunt similique doloremque nulla atque?</p>
+
+    </div>
+</div>
+    <div class="div2" id="div2">
+        <div><a href="#citys">Explore RealEstate citys</a></div>
+        
+    </div>
+
+    <div class="citys" id="citys" >
+        
+        <p>citys</p>
+
+    
+    </div>
+
+     <div class="div3" id="div3">
+        <div><a href="#articals">Learn RealEstate with articals</a></div>
+     </div>
+
+     <div class="articals" id="articals">
+        <div class="articaldiv">
+            <ul class="op3">
+                <li class="artical1"><a href="#">artical1</a></li>
+                <li class="artical2"><a href="#">artical2</a></li>
+            </ul>
+            <ul class="op4">
+                <li class="artical3"><a href="#">artical3</a></li>
+                <li class="more"><a href="#">more</a></li>
+            </ul>
+            <h2>Articals:</h2>
+            <p class="pa1">Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Saepe in ullam voluptate,
+                 quasi ut corrupti, illum quos consequuntur nostrum,
+                 mollitia possimus accusantium totam est minus
+                 eos porro doloremque dolores aliquid?</p>
+        </div>
+        
+     </div>
+
+     <footer class="footer" id="footer">
+        <ul>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>copyright</li>
+            <li><a href="#">page-up</a></li>
+        </ul>
+     </footer>
+
+<script type="text/javascript">
+     var bgpattern = document.getElementById("div2")
+    window.addEventListener("scroll",function(){
+        bgpattern.style.backgroundPosition=+window.pageYOffset+"px";
+    })
+
+    var bgpattern1 = document.getElementById("div1")
+    window.addEventListener("scroll",function(){
+        bgpattern1.style.backgroundPositionY=+window.pageYOffset+"px";
+    })
+
+    var bgpattern2 = document.getElementById("div3")
+    window.addEventListener("scroll",function(){
+        bgpattern2.style.backgroundPosition=+window.pageYOffset+"px";
+    })
+
+    var bgpattern3 = document.getElementById("articals")
+    window.addEventListener("scroll",function(){
+        bgpattern3.style.backgroundPositionY=+window.pageYOffset+"px";
+    })
+
+    var bgpattern4 = document.getElementById("RealEstateoptions")
+    window.addEventListener("scroll",function(){
+        bgpattern4.style.backgroundPositionY=+window.pageYOffset+"px";
+    })
+
+
+    </script>
+
+</body>
+</html>

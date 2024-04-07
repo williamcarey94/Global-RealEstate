@@ -1,0 +1,335 @@
+
+     
+    body { 
+        background: black; 
+        color: white;
+        margin: 0%;
+        padding: 0%;
+        width: auto;
+        justify-content: center;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    /* ____________navigation bar____________*/
+    .navbar{
+        overflow: hidden;
+        background-color: black;
+    }
+    .navbar a{list-style-type:none;
+              text-decoration: none;
+              color:bisque;
+              padding: 30px 90px;
+              font-size: 25px;
+              letter-spacing: 2px;
+              
+              
+              
+            }
+    .navbar ul{ 
+        text-decoration:none;
+        list-style-type:none;
+        padding:30px;
+        margin:0px;
+        background-color: rgba(255, 255, 255, 0.027);
+        overflow:hidden;
+        text-align: center;
+        
+        
+    }
+    .navbar li{
+        display:inline-block;
+        color:bisque;
+        
+    }
+    .navbar  a:hover{
+        color: rgba(215, 242, 250, 0.952);
+        text-shadow: 0px 0px 15px rgb(233, 169, 7);
+        
+    }
+    .navbar li a:active{
+        box-shadow: 0px 0px 15px rgba(12, 143, 204, 0.753) ;
+        transform: scale(500px 50px);
+    }
+    .logo{
+        font-size: 30px;
+       padding: 0px 90px;
+       cursor:pointer;
+       letter-spacing: 2px;
+    }
+    /* ____________navigation bar end____________*/
+    
+/*_________________login page___________________*/
+
+.loginbackground{
+    background-color: rgba(8, 8, 10, 0.822);
+    min-height: auto;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 80px;
+    text-align: center;
+}
+.loginbackground h1{
+    
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+
+    
+}
+.loginbackground h1:hover{
+
+    cursor: pointer;
+
+}
+.loginbackground2{
+    background-color: rgb(2, 8, 10);
+    padding: 10px;
+    border-radius: 9px;
+}
+.loginbody{
+    background-image: url(../images/Patterns/pattern18.jpg);
+    background-size: 500px;
+
+}
+.loginbackground3{
+    height: 343px;
+    background-color: rgba(250, 251, 255, 0);
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 80px;
+    border-radius: 9px;
+    
+    
+}
+.loginFormDiv1{
+    margin: 110px 0px 70px 0px;
+    background-color: rgba(245, 246, 247, 0);
+    
+    
+    
+    
+    
+}
+.loginFormDiv2{
+    margin-left: 40px;
+    margin-bottom: 50px;
+    background-color: rgba(245, 246, 247, 0);
+
+    
+}
+.loginFormDiv2 img{
+    margin-left: 2px;
+    width: 40px;
+    
+}
+
+.loginInput{
+    padding:  10px 0px 5px 10px;
+    margin: 0px 0px 0px 0px;
+    
+    font-size: 35px;
+}
+.loginbackground button{
+    padding:5px 70px ;
+    border-radius: 15px;
+    color: #ffffffd3;
+    font-size: 26px;
+    font-family: 'Gill Sans', ;
+    background-size: 690px;
+    
+    background-color: #35588b80;
+
+
+}
+.loginbackground a{
+    color:aliceblue;
+    font-size: 27px;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+/*_________________login page end___________________*/
+/*_________________signup page ___________________*/
+
+.signupbackground{
+    background-color: rgba(8, 8, 10, 0.822);
+    min-height: auto;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 80px;
+    text-align: center;
+}
+.signupbackground p{
+    margin: 70px;
+}
+.signupbackground h1{
+    
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+
+    
+}
+.signupbackground h1:hover{
+
+    cursor: pointer;
+
+}
+.signupbackground2{
+    background-color: rgb(2, 8, 10);
+    padding: 10px;
+    border-radius: 9px;
+}
+.signupBody{
+    background-image: url(../images/Patterns/pattern18.jpg);
+    background-size: 500px;
+
+}
+.signupbackground3{
+    height: 343px;
+    background-color: rgba(250, 251, 255, 0);
+    
+    margin-bottom: 0px;
+    margin-top: 80px;
+    border-radius: 9px;
+    
+    
+}
+.signupFormDiv1{
+    margin: 90px 0px 50px 0px;
+}
+.signupFormDiv2{
+    margin: 0px;
+    margin-bottom: 50px;
+    
+}
+
+.signupFormDiv3{
+    margin-bottom: 50px;
+
+}
+.signupFormDiv3 img{
+    margin-left: 2px;
+    width: 40px;
+    
+}
+
+.signupInput{
+    padding:  10px 50px 5px 10px;
+    border-radius: 10px;
+    font-size: 35px;
+}
+.signupInput2{
+    padding:  10px 50px 5px 10px;
+    border-radius: 10px;
+    margin-right: 40px;
+    font-size: 35px;
+}
+
+.signupInput3{
+    padding:  10px 50px 5px 10px;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-size: 35px;
+}
+
+
+.signupbackground button{
+    padding:5px 70px ;
+    border-radius: 15px;
+    color: #ffffffd3;
+    font-size: 26px;
+    font-family: 'Gill Sans', ;
+    background-size: 690px;
+    
+    background-color: #35588b80;
+
+}
+.signupbackground a{
+    color:aliceblue;
+    font-size: 27px;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+/*_________________signup page end___________________*/
+
+/*_________________profile page___________________*/
+.profileBody{
+    background-image: url(../images/homepageIMG/sampleimage8.jpg);
+    background-size: cover;
+    background-position:right;
+    background-color: rgba(11, 10, 99, 0.26);
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    height: 2000px;
+}
+.profileNavdiv{
+    display: flex;
+    background-color: rgba(107, 113, 117, 0.973);
+    padding: 0px 0px;
+    height: 100px;
+    margin-top: 0px;
+    width: auto;  
+}
+.profileNavdiv h2{
+    padding: 0px 0px 0px 30px;
+    font-size: 40px;
+    font-family: Helvetica;
+    margin: 25px;
+    letter-spacing: 1px;
+
+}
+.profileButtons {
+    display: block;
+    
+    padding:10px  10px 10px 100px;
+    margin: 20px;
+    background-image: url(../images/Patterns/pattern10.jpg);
+    
+
+}
+.profileButtons button{
+    padding: 3px 40px;
+    color: #3014af;
+    font-size: 20px;
+    background-color: #f3d31f;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.profileButtons h3{
+    margin: 0px;
+    margin:  0px 0px;
+    display: inline-block;
+    font-size: 30px;
+    
+}
+.profileName{
+    width: 1200px;
+    display: inline-block;
+    text-align: center;
+}
+
+.profileDetails{
+    height: 800px;
+    background-color: rgba(205, 215, 223, 0.849);
+    margin: 30px 400px;
+
+}
+.profileYourFavorite{
+    height: 800px;
+    background-color: rgba(205, 215, 223, 0.849);
+    margin: 30px 400px;
+
+}
+.profileYourPurchase{
+    height: 800px;
+    background-color: rgba(205, 215, 223, 0.849);
+    margin: 30px 400px;
+
+}

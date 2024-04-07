@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate Website</title>
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+
+<body class="loginbody" id="loginbody">
+    <header>
+        <div class="navdiv">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="product.html"> Search</a></li>
+                    <li class="logo">Global RealEstate</li>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="profile.html"> Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="loginbackground">
+        <div class="loginbackground2"><h1>Login</h1></div>
+        <div class="loginbackground3">
+            <form>
+                <div class="loginFormDiv1">
+                  
+                  <input class="loginInput" type="text" id="username" placeholder="Enter Email" name="username" required>
+                </div>
+                
+                <div class="loginFormDiv2">
+
+                  <input class="loginInput" type="password" id="password" placeholder="Enter Password" name="password" required>
+                  <img src="icons/eye-close.png" alt="" id="eyeIcon">
+                </div>
+                <button type="submit">Login</button>
+              </form>
+
+        </div>
+        <p> <a href="signup.html">Didn't have account signup</a>
+            
+        </p>
+        <a href="#">forget Password</a>
+
+    </div>
+
+<script>
+     var bgpattern = document.getElementById("loginbody")
+    window.addEventListener("scroll",function(){
+        bgpattern.style.backgroundPositionY=+window.pageYOffset+"px";
+    })
+
+    let eyeIcon = document.getElementById('eyeIcon');
+    let passwordInput = document.getElementById('password');
+
+    eyeIcon.addEventListener('click', function() {
+     if (passwordInput.type == 'password') {
+         passwordInput.type = 'text';
+         eyeIcon.src = 'icons/eye-open.png';  
+   } else {
+    passwordInput.type = 'password';
+    eyeIcon.src = 'icons/eye-close.png'; 
+   }
+   });
+    
+
+    
+
+
+</script>
+
+</body>
